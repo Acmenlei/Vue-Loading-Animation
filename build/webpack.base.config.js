@@ -1,6 +1,7 @@
 "use strict";
 
 const path = require("path");
+console.log(path.resolve(__dirname, "src"));
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const SassLoaderConfig = require("./loader/sass");
 const TsLoaderConfig = require("./loader/typescript");
@@ -16,7 +17,15 @@ module.exports = {
         filename: "index.js"
     },
     resolve: {
-        extensions: [".ts", ".js", ".tsx"] // 扩展
+        extensions: [".ts", ".js", ".tsx"], // 扩展
+        alias:{
+            "@": path.join(__dirname, '..','src')
+        }
+    },
+    devServer: {
+        open: true,
+        hot: true,
+        compress: true
     },
     plugins: [
         new HtmlWebpackPlugin({

@@ -1,12 +1,12 @@
 <template>
   <div id="hello">
-    <h1>Welcome to Custom Vue cli</h1>
+    <h1>Test</h1>
     <HelloWorld />
   </div>
 </template>
     
 <script>
-import HelloWorld from "../components/HelloWorld.vue";
+import HelloWorld from "@/components/HelloWorld.vue";
 export default {
   name: "App",
   components: { HelloWorld },

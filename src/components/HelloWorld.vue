@@ -1,24 +1,23 @@
 <template>
-<div id="hello">
-    {{name}}
-    <button @click="handleClick">handle</button>
-</div>
+  <div id="hello">
+    {{ value }}
+  </div>
 </template>
     
 <script>
 export default {
-    name:'helloworld',
-    data() {
-        return {
-            name:"jxl"
-        }
+  name: "helloworld",
+  data() {
+    return {
+      value: "",
+    };
+  },
+  methods: {
+    handleClick: function () {
+      this.name = this.value;
     },
-    methods:{
-        handleClick() {
-            this.name = 'update'
-        }
-    }
-}
+  },
+};
 </script>
 
 <style lang="scss" src="../index.scss"></style>
