@@ -9,7 +9,6 @@ module.exports = {
                 import: true
             }
         },
-        // 3.使用sass加载器
         'sass-loader'
     ],
 }

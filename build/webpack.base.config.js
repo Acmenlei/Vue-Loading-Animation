@@ -1,3 +1,5 @@
+"use strict";
+
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const SassLoaderConfig = require("./loader/sass");
@@ -8,7 +10,7 @@ const EsLoaderConfig = require("./loader/js");
 const VueLoaderPlugin = require("vue-loader/lib/plugin");
 
 module.exports = {
-    entry: path.join(__dirname, './index.js'),
+    entry: path.join(__dirname, '../src/index.ts'),
     output: {
         path: path.join(__dirname, "..", "dist"),
         filename: "index.js"
