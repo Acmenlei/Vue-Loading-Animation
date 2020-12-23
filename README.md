@@ -1,5 +1,5 @@
 # Custom-Vue-cli
-基于webpack的自定义cli
+基于vue的加载动画
 #### 安装依赖项
 ```shell
 npm install 
