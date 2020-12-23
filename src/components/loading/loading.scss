@@ -9,15 +9,22 @@
   align-items: center;
   margin-top: 20rem;
   position: relative;
-  div {
+  .layer {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  div.loading {
     width: var(--width);
     height: var(--width);
     border-radius: 0.2rem;
     position: relative;
     animation: loading 1s infinite linear;
     margin: calc(var(--width) - 1rem);
+    z-index: 2;
   }
-  div::after {
+  div.loading::after {
     content: "";
     width: var(--width);
     height: var(--width);
@@ -27,16 +34,16 @@
     left: 0;
     transform: rotate(45deg);
   }
-  div:nth-child(1) {
+  div:nth-child(2) {
     background: #2ecc71;
   }
-  div:nth-child(2) {
+  div:nth-child(3) {
     background: #3498db;
   }
-  div:nth-child(3) {
+  div:nth-child(4) {
     background: #9b59b6;
   }
-  div:nth-child(4) {
+  div:nth-child(5) {
     background: #ffa502;
   }
   @keyframes loading {
@@ -57,6 +64,7 @@
   top: -1.2rem;
   letter-spacing: 0.1rem;
   left: 50%;
+  z-index: 2;
   font-size: 0.7rem;
   transform: translateX(-50%);
   animation: loadingContent 1s infinite linear alternate;

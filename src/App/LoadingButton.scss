@@ -1,0 +1,15 @@
+button {
+    background: #1e90ff;
+    color: #f2f2f2;
+    outline: none;
+    padding: 0.3rem 0.5rem;
+    border: none;
+    border-radius: 0.3rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,4rem);
+}
+button:active {
+    opacity: 0.8;
+}
