@@ -2,9 +2,9 @@
   "name": "typescript_in_action",
   "version": "1.0.0",
   "description": "ts编译",
-  "main": "./src/index.ts",
+  "main": "index.js",
   "scripts": {
-    "serve": "webpack-dev-server --mode=development --config ./build/webpack.config.js",
+    "serve": "webpack-dev-server --progress --colors --mode=development --config ./build/webpack.config.js",
     "build": "webpack --config ./build/webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -30,5 +30,6 @@
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^5.7.2"
-  }
+  },
+  "dependencies": {}
 }

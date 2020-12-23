@@ -1,0 +1,18 @@
+#money {
+    width: 5rem;
+    height: 5rem;
+    background: #f2f2f2;
+    border-radius: 50%;
+    margin: 1rem auto;
+    box-shadow: 0 0 5px inset white, 0 0 3px inset #555;
+    text-align: center;
+    h2 {
+        color: #ccc;
+        line-height: 4rem;
+        text-shadow: 0 0 5px inset white, 0 0 5px inset #666, 0 0 3px inset #555;
+    }
+    h2::after {
+        content: "元";
+        font-size: 0.8rem;
+    }
+}
